@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<%= render 'navigation'%>
+
+<p>
+  <strong>Homework name:</strong>
+  <%= @homework.homework_name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @homework.category.present? ? @homework.category.name : "-" %>
+</p>
+
+<p>
+  <strong>Sub-Category:</strong>
+  <%= @homework.sub_category.present? ? @homework.sub_category.name : "-" %>
+</p>
+<p>
+  <strong>Deadline:</strong>
+  <%= @homework.deadline %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @homework.description %>
+</p>
+
+<%= link_to 'Edit', edit_homework_path(@homework) %> |
+<%= link_to 'Back', homeworks_path %>

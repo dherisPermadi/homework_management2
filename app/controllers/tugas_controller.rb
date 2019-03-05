@@ -1,0 +1,2 @@
+class TugasController < ApplicationController
+end
